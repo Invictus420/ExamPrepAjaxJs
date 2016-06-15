@@ -15,6 +15,7 @@ $(document).ready(function () {
             es[i].onclick = function () {
 //                var ex = new XMLHttpRequest();
                 $.ajax({url: "api/generic/cunts/" + id, success: function (result) {
+                        //"http://restcountries.eu/rest/v1/alpha?codes=" + id
                         if (formerId !== "") {
                             $("#" + formerId).css("fill", "c0c0c0");
                         }
