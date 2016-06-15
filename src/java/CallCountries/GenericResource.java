@@ -60,7 +60,7 @@ public class GenericResource {
             jsonStr = scan.nextLine();
         }
         scan.close();
-        return gson.toJson(jsonStr);
+        return jsonStr;
     }
 
     /**

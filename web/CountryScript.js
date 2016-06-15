@@ -13,8 +13,8 @@ $(document).ready(function () {
         (function (i) {
             var id = es[i].id;
             es[i].onclick = function () {
-                var ex = new XMLHttpRequest();
-                $.ajax({url: "/api/generic/cunts/" + id, success: function (result) {
+//                var ex = new XMLHttpRequest();
+                $.ajax({url: "api/generic/cunts/" + id, success: function (result) {
                         if (formerId !== "") {
                             $("#" + formerId).css("fill", "c0c0c0");
                         }
